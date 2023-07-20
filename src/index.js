@@ -19,4 +19,4 @@ function calculateDay() {
 
   const resultElement = document.getElementById("result");
   resultElement.textContent = `The date ${dateString} occurred on a ${dayOfWeek}.`;
-}
+};
