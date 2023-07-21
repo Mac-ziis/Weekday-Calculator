@@ -5,6 +5,22 @@ import DayCalculator from './js/dayCalculator.js';
 
 // js goes here
 
+// function calculateDate() {
+//   const dateInput = document.getElementById("dateInput");
+//   const dateString = dateInput.value;
+
+//   if (!dateString) {
+//     alert("Please enter a valid date.");
+//     return;
+//   }
+
+//   const calculator = new DayCalculator(dateString);
+//   const dayOfWeek = calculator.calculateDate();
+
+//   const resultElement = document.getElementById("result");
+//   resultElement.textContent = `The date ${dateString} occurred on a ${dayOfWeek}.`;
+// }
+
 function calculateDay() {
   const dateInput = document.getElementById("dateInput");
   const dateString = dateInput.value;
@@ -19,4 +35,6 @@ function calculateDay() {
 
   const resultElement = document.getElementById("result");
   resultElement.textContent = `The date ${dateString} occurred on a ${dayOfWeek}.`;
-};
+}
+
+window.calculateDay = calculateDay;
